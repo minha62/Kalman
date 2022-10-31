@@ -9,8 +9,8 @@ Avgsaved = zeros(Nsamples, 1);
 Xmsaved = zeros(Nsamples, 1);
 
 for k=1:Nsamples
-    xm = GetVolt();
-    avg = AvgFilter(xm);
+    xm = GetVolt();         % 전압값 읽어오기
+    avg = AvgFilter(xm);    % 평균 필터 함수 호출
 
     Avgsaved(k) = avg;
     Xmsaved(k) = xm;
