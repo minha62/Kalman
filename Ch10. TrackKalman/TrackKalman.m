@@ -31,7 +31,7 @@ Pp = A*P*A' + Q;
 
 K = Pp*H'*inv(H*Pp*H' + R);
 
-z = [xm ym];
+z = [xm ym]';
 x = xp + K*(z - H*xp);
 P = Pp - K*H*Pp;
 
